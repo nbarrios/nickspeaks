@@ -1,0 +1,12 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+<ul class="archive-post-list">
+    {% for post in site.posts %}
+    <li>
+        <p><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> - <span>{{ post.date | date: "%b %-d, %Y" }}</span></p>
+    </li>
+    {% endfor %}
+</ul>
